@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>EBMS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+
+
+  .list-group-item
+  {
+  width:200px;
+  height:50px;
+  color:white;
+  text-align:center;
+  background:black;
+  margin-top:20px;
+  margin-left:0px;
+  }
+  .container
+  {
+  float:left;
+  margin-top:100px;
+  margin-left:50px;
+  width:300px;
+  }
+  .pic
+  {
+  margin-top:50px;
+  margin-left:100px;
+  float:left;
+  width:400px;
+  }
+  .head h3
+{
+float:right;
+margin-left:20px;
+margin-right:20px;
+color:white;
+}
+.list-group li a
+{
+color:white;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Electricity Bill Management
+					System</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="empolyee.html">Home</a></li>
+				<li class="active"><a href="#">Aboutus</a></li>
+				<li class="active"><a href="#">Services</a></li>
+				<li class="active"><a href="#">Location</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="EmpLogoutServlet"><span
+						class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h2>Payments Menu</h2>
+		<ul class="list-group">
+			<li class="list-group-item"><a href="epayment.html">Bill Pay</a></li>
+			<li class="list-group-item"><a href="EPaymentViewServlet">View All Payments</a></li>
+			<!-- <li class="list-group-item"><a href="#">View Specific Payments</a></li> -->
+		</ul>
+	</div>
+	<div class="pic">
+<img src="./images/E6.jpg">
+</div> 
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Customer Registration</title>
+<style>
+.form-group
+{
+width:350px;
+}
+.container
+{
+font:white;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Electrical Bill Management System</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="admin.html">Home</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+      <li><a href="ALogoutServlet"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li> 
+  </div>
+  
+</nav>
+<div class="container">
+  <h2>Unit Price Details</h2>
+  <form action="UnitInsertServlet" method="get">
+  <div class="left">
+   
+    
+    <div class="form-group">
+      <label for="ctype">Connection Type:</label>
+      <select name="ctype">
+      <option>select</option>
+      <option>Residential</option>
+      <option>Industrial</option>
+      <option>Organisation</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="unitprice">Unitprice:</label>
+      <input type="text" class="form-control" placeholder="Enter unit price" name="unitprice" required/>
+    </div>
+   
+    <button type="submit" class="btn btn-default">ADD</button>
+
+</body>
+</html>

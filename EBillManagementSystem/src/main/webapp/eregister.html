@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Empolyee Registration</title>
+<script src="./formvalidation/validations.js" >
+	</script>
+<style>
+.form-group {
+	width: 350px;
+}
+
+.container {
+	font: white;
+}
+#error
+{
+color:red;
+font-size:10px;
+margin:10px;
+}
+#error1
+{
+color:red;
+font-size:10px;
+margin:10px;
+}
+#error2
+{
+color:red;
+font-size:10px;
+margin:10px;
+}
+#error3
+{
+color:red;
+font-size:10px;
+margin:10px;
+}
+</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Electrical Bill Management
+					System</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="admin.html">Home</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="ALogoutServlet"><span
+						class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+		</div>
+
+	</nav>
+	<div class="container">
+		<h2>Registration</h2>
+		<form action="EmpolyeeServlet" method="get">
+			<div class="left">
+
+				<div class="form-group">
+					<label for="ename">Empolyee Name:</label> <input type="text"
+						class="form-control" placeholder="Enter Empolyee Name"
+						name="ename" id="name" /><span id="error"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="eadd">Empolyee Address:</label> <input type="textarea"
+						class="form-control" placeholder="Enter Empolyee Address"
+						name="eadd" id="add"/><span id="error1"></span>
+				</div>
+				<div class="form-group">
+					<label for="emobile">Empolyee Mobile:</label> <input type="text"
+						class="form-control" placeholder="Enter Empolyee Mobile"
+						name="emobile" id="mobile"/><span id="error2"></span>
+				</div>
+				<div class="form-group">
+					<label for="eprofile">Empolyee profile:</label> <input type="text"
+						class="form-control" placeholder="Enter Empolyee profile"
+						name="eprofile" id="profile"/><span id="error3"></span>
+				</div>
+
+				<input type="submit" value="next" id="submit" name="submit"
+					onclick="return validation()" class="btn btn-default">
+</body>
+</html>

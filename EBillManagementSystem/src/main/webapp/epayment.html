@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>EBMS</title>
+<style>
+.form-group
+{
+width:350px;
+}
+.container
+{
+font:white;
+ float:left;
+  margin-top:100px;
+  margin-left:50px;
+  width:300px;
+}
+.pic
+  {
+  margin-top:50px;
+  margin-left:100px;
+  float:left;
+  width:400px;
+  }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Electrical Bill Management System</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="empolyee.html">Home</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+  </div>
+ 
+</nav>
+ <div class="container">
+  <h2>Payment</h2>
+  <form action="EPaymentServlet" method="get">
+  <div class="left">
+  
+    <div class="form-group">
+      <label for="bid">Bill Id:</label>
+      <input type="text" class="form-control" placeholder="Enter Bill Id" name="bid" required/>
+    </div>
+    <div class="form-group">
+      <label for="totbill">Total bill:</label>
+      <input type="text" class="form-control" placeholder="Enter Total Bill" name="totbill" required/>
+    </div>
+    <div class="form-group">
+      <label for="paying">Amount Paying:</label>
+      <input type="text" class="form-control" placeholder="Enter Amount Paying" name="paying" required/>
+    </div>
+    <div>
+    <label for="pmethod">Payment Method</label>
+    <select name="pmethod">
+    <option>select</option>
+    <option>cash</option>
+    
+    </select>
+     <button type="submit" class="btn btn-default">Pay</button>
+    </div>
+ 
+   <!-- <div class="pic">
+<img src="./images/E6.jpg">
+</div> -->
+
+</body>
+</html>

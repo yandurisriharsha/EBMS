@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Empolyee Login Registration</title>
+<script src="./formvalidation/emplvalidations.js">
+
+</script>
+<style>
+.form-group {
+	width: 350px;
+}
+
+.container {
+	font: white;
+}
+
+#usererror {
+	color: red;
+	font-size: 10px;
+	margin: 10px;
+}
+
+#pwderror {
+	color: red;
+	font-size: 10px;
+	margin: 10px;
+}
+</style>
+<script src="./formvalidation/validations.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Electrical Bill Management
+					System</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="ELogin.html">Login</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+		</div>
+
+	</nav>
+	<div class="container">
+		<h2>Registration</h2>
+		<form action="LEmpServlet" method="get">
+			<div class="left">
+
+				<div class="form-group">
+					<label for="euserid">Create Username:</label> <input type="text"
+						class="form-control" placeholder="Enter Empolyee Username"
+						name="euserid" id="empuserid" /><span id="usererror"></span>
+				</div>
+				<div class="form-group">
+					<label for="epwd">Create Password:</label> <input type="password"
+						class="form-control" placeholder="Enter Empolyee Password"
+						name="epwd" id="emppwd" /><span
+									toggle="#password"
+									class="zmdi zmdi-eye field-icon toggle-password"></span><span id="pwderror"></span>
+				</div>
+				<input type="submit" value="Register" id="submit" name="submit"
+					onclick="return validate()" class="btn btn-default" />
+</body>
+</html>

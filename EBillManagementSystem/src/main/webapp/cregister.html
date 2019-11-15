@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Customer Registration</title>
+<script src="./formvalidation/ctvalidations.js"></script>
+<style>
+.form-group {
+	width: 350px;
+}
+
+.container {
+	font: white;
+}
+
+#cnameerror {
+	color: red;
+	font-size: 10px;
+	margin: 10px;
+}
+
+#cadderror {
+	color: red;
+	font-size: 10px;
+	margin: 10px;
+}
+
+#cmobileerror {
+	color: red;
+	font-size: 10px;
+	margin: 10px;
+}
+
+#cemailerror {
+	color: red;
+	font-size: 10px;
+	margin: 10px;
+}
+#ctypeerror {
+	color: red;
+	font-size: 10px;
+	margin: 10px;
+}
+</style>
+</style>
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Electrical Bill Management
+					System</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="CLogin.html">Login</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<!-- <li><a href="Acust.html"><span class="glyphicon glyphicon-log-in"></span> Back</a></li> -->
+		</div>
+
+	</nav>
+	<div class="container">
+		<h2>Registration</h2>
+		<form action="CustomerServlet" method="get">
+			<div class="left">
+
+				<div class="form-group">
+					<label for="cname">Customer Name:</label> <input type="text"
+						class="form-control" placeholder="Enter Customer Name"
+						name="cname" id="ctname" /><span id="cnameerror"></span>
+				</div>
+				<div class="form-group">
+					<label for="cadd">Customer Address:</label> <input type="text"
+						class="form-control" placeholder="Enter Customer Address"
+						name="cadd" id="ctadd" /><span id="cadderror"></span>
+				</div>
+				<div class="form-group">
+					<label for="cmobile">Customer Mobile:</label> <input type="text"
+						class="form-control" placeholder="Enter Customer Mobile"
+						name="cmobile" id="ctmobile" /><span id="cmobileerror"></span>
+				</div>
+				<div class="form-group">
+					<label for="cemail">Customer Email:</label> <input type="text"
+						class="form-control" placeholder="Enter Customer Email"
+						name="cemail" id="ctemail" /><span id="cemailerror"></span>
+				</div>
+				<div class="form-group">
+					<label for="ctype">Required Connection Type:</label> <select
+						name="ctype" id="cttype"><span id="ctypeerror"></span>
+						<option>select</option>
+						<option>Residential</option>
+						<option>Industrial</option>
+						<option>Organisation</option>
+					</select>
+				</div>
+
+				<input type="submit" value="next" id="submit" name="submit"
+					onclick="return ctvalidation()" class="btn btn-default" />
+</body>
+</html>

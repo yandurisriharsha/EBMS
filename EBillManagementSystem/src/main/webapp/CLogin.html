@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EBMS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+  <style>
+.form-control
+{
+width:320px;
+}
+.form-group
+{
+margin-left:25px;
+}
+.btn btn-default
+{
+float:center;
+}
+.left
+{
+float:left;
+}
+.main
+{
+background:url(./images/EE1.jpg);
+width:100%;
+height:608px;
+}
+.main .head
+{
+	width:30%;
+	height:500px;
+	margin-left:70px;
+	background:white;
+	border-radius:5px;
+}
+.container h2
+{
+margin-left:70px;
+
+}
+.left
+{
+margin-top:60px;
+}
+.checkbox
+{
+margin-left:25px;
+}
+.aaa
+{
+margin-left:150px;
+
+}
+.tb
+{
+margin-top:30px;
+}
+</style>
+</head>
+<body>
+<div class="main">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Electricity Bill Management System</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="EBMS.html">Home</a></li>
+      <li class="active"><a href="#">Aboutus</a></li>
+      <li class="active"><a href="#">Services</a></li>
+      <li class="active"><a href="#">Location</a></li>
+        </ul>
+  </div>
+</nav>
+
+<div class="head">
+<div class="container">
+  <h2>Customer Login</h2>
+  <form action="CustLoginServlet" method="get">
+  <div class="left">
+    <div class="form-group">
+      <label for="euserid">Username:</label>
+      <input type="text" class="form-control" placeholder="Enter username" name="cuserid">
+    </div>
+    <div class="form-group">
+      <label for="epwd">Password:</label>
+      <input type="password" class="form-control" placeholder="Enter password" name="cpwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+	<div class="aaa">
+    <button type="submit" class="btn btn-default">Login</button>
+   </div>
+   <div class="tb">
+    <ul>
+    <li><a href="custfp.html">Forgot Password</a></li><li><a href="eregister.html">Register</a></li>
+	
+    </ul>
+    </div>
+   </div>
+
+</div>
+  
+</div>
+
+</body>
+</html>
